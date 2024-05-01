@@ -4,9 +4,9 @@ const slides = [
         id: "title",
         onload: () => {
             const button = document.querySelector(".material-symbols-outlined")
-            
+
         }
-        
+
     },
     {
         name: "DAQI",
@@ -24,35 +24,35 @@ const slides = [
             const cactus = document.getElementById("cactus");
 
             function jump() {
-            if (dino.classList != "jump") {
-                dino.classList.add("jump");
+                if (dino.classList != "jump") {
+                    dino.classList.add("jump");
 
-                setTimeout(function () {
-                dino.classList.remove("jump");
-                }, 300);
-            }
+                    setTimeout(function () {
+                        dino.classList.remove("jump");
+                    }, 300);
+                }
             }
 
             let isAlive = setInterval(function () {
-            // get current dino Y position
-            let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+                // get current dino Y position
+                let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
 
-            // get current cactus X position
-            let cactusLeft = parseInt(
-                window.getComputedStyle(cactus).getPropertyValue("left")
-            );
+                // get current cactus X position
+                let cactusLeft = parseInt(
+                    window.getComputedStyle(cactus).getPropertyValue("left")
+                );
 
-            // detect collision
-            if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
-                //collision
-                alert("You got to the UK");
-            }
+                // detect collision
+                if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+                    //collision
+                    alert("You got to the UK");
+                }
             }, 10);
 
             document.addEventListener("keydown", function (event) {
-            jump();
+                jump();
             });
-            
+
         }
 
     },
@@ -82,8 +82,7 @@ const slides = [
     },
     {
         name: "Cigarette intro",
-        id: "CigaretteIntro",
-        footer: "Hello"
+        id: "CigaretteIntro"
     },
     {
         name: "cigaretteData",
