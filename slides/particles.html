@@ -1,0 +1,95 @@
+<body>
+    <h2>Mr.pollutant's journey</h2>
+    <div class="game">
+      <div id="dino"></div>
+      <div id="rock"></div>
+      <div id="cactus"></div>
+    </div>
+    <p>Press space bar to jump</p>
+  </body>
+
+  <style>
+    h2 {
+        margin-top: 100px;
+    }
+    .game {
+    width: calc(400px + 10vw);
+    height: 200px;
+    border: 3px solid black;
+    margin: auto;
+  }
+  
+  #dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/ja1.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+  }
+  
+  .jump {
+    animation: jump 0.3s linear;
+  }
+  
+  @keyframes jump {
+    0% {
+      top: 150px;
+    }
+  
+    30% {
+      top: 130px;
+    }
+  
+    50% {
+      top: 80px;
+    }
+  
+    80% {
+      top: 130px;
+    }
+  
+    100% {
+      top: 150px;
+    }
+  }
+
+  /* #rock {
+    width: 40px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 580px;
+  
+    background-image: url(img/ja7.png);
+    background-size: 40px 20px;
+  
+    animation: block 4s infinite linear;
+  } */
+  
+  #cactus {
+    width: 60px;
+    height: 80px;
+    position: relative;
+    top: 73px;
+    left: 580px;
+  
+    background-image: url(img/ja2.png);
+    background-size: 60px 80px;
+  
+    animation: block 6s infinite linear;
+  }
+  
+  @keyframes block {
+    0% {
+      left: 500px;
+    }
+  
+    100% {
+      left: 0px;
+    }
+  }
+
+  </style>
+  
+  

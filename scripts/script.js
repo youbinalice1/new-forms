@@ -66,7 +66,7 @@ onkeydown = e => {
   switch (e.code) {
     case "ArrowRight":
     case "ArrowDown":
-    case "Space":
+    // case "Space":
       slideshow.next()
       break
     case "ArrowLeft":

@@ -1,9 +1,3 @@
-/*
-
-html in slides folder
-
-*/
-
 const slides = [
     {
         name: "Title page",
@@ -13,6 +7,58 @@ const slides = [
             
         }
         
+    },
+    {
+        name: "DAQI",
+        id: "DAQI",
+    },
+    {
+        name: "Introduction",
+        id: "introN02",
+    },
+    {
+        name: "Particles",
+        id: "Particles",
+        onload: () => {
+            const dino = document.getElementById("dino");
+            const cactus = document.getElementById("cactus");
+
+            function jump() {
+            if (dino.classList != "jump") {
+                dino.classList.add("jump");
+
+                setTimeout(function () {
+                dino.classList.remove("jump");
+                }, 300);
+            }
+            }
+
+            let isAlive = setInterval(function () {
+            // get current dino Y position
+            let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+
+            // get current cactus X position
+            let cactusLeft = parseInt(
+                window.getComputedStyle(cactus).getPropertyValue("left")
+            );
+
+            // detect collision
+            if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+                //collision
+                alert("You got to the UK");
+            }
+            }, 10);
+
+            document.addEventListener("keydown", function (event) {
+            jump();
+            });
+            
+        }
+
+    },
+    {
+        name: "londonIntro",
+        id: "londonIntro",
     },
     {
         name: "Air pollution in Greater London by Borough",
@@ -29,15 +75,19 @@ const slides = [
                 i.onmouseout = () => {
                     document.getElementById("borough").innerText = "Hover over a borough to view data"
                 }
-                const gradient = chroma.scale(['#F3E101', '#FF1794', '#990344']).domain([40, 55])
+                const gradient = chroma.scale(['#c9c9c9', '#666666', '#2d2d2d']).domain([40, 55])
                 i.style.fill = gradient(data[i.id])
             })
         }
     },
     {
-        name: "New page",
-        id: "newpage",
+        name: "Cigarette intro",
+        id: "CigaretteIntro",
         footer: "Hello"
+    },
+    {
+        name: "cigaretteData",
+        id: "cigaretteData",
     },
 
 ]
