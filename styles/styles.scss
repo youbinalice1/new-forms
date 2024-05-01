@@ -1,0 +1,105 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+$theme: #990344;
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: rgb(255 246 228);
+    color: $theme;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-family: "Antonio";
+    text-align: center;
+    font-size: 7vw;
+    margin: 1vh 0;
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    img {
+        position: fixed;
+        height: 100px;
+        top: calc(50vh - 50px);
+        left: calc(50vw - 50px);
+    }
+}
+
+.show {
+    animation: fadeIn .2s;
+}
+
+.fadeOut {
+    animation: fadeOut .2s forwards;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#boroughs {
+    display: flex;
+    justify-content: center; // ??
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+    #map {
+        svg {
+            max-width: 90vw;
+            max-height: 65vh;
+            width: 700px;
+            stroke: $theme;
+
+            path {
+                cursor: pointer;
+                transition: .1s;
+
+                &:hover {
+                    opacity: 1 !important;
+                }
+            }
+
+            g:hover path {
+                opacity: .2;
+            }
+        }
+    }
+
+    #legend {
+        width: 40vw;
+        max-width: 300px;
+        margin: auto;
+    }
+}
