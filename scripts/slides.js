@@ -47,8 +47,10 @@ const slides = [
                     //collision
                     cactus.style.display = "none"
                     const speech = [...document.querySelectorAll(".speech")]
-                    speech.map(i => {
+                    speech.map((i, j) => {
                         i.style.display = "unset"
+                        if (j) //next button
+                            i.onclick = () => slideshow.next()
                     })
                 }
             }, 10);
