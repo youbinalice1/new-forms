@@ -18,7 +18,7 @@ const slides = [
     },
     {
         name: "Particles",
-        id: "Particles",
+        id: "particles",
         onload: () => {
             const dino = document.getElementById("dino");
             const cactus = document.getElementById("cactus");
