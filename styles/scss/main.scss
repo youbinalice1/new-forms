@@ -304,6 +304,28 @@ main {
         top: 200px - $dino-size;
     }
 
+    #uk,
+    #london {
+        $size: 200px;
+        width: $size;
+        height: $size;
+        background-size: $size $size;
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: none;
+    }
+
+    #uk {
+        background-image: url("/img/ja9.png");
+    }
+
+    #london {
+        background-image: url("/img/ja10.png");
+    }
+
     .jump {
         animation: jump .8s ease;
     }

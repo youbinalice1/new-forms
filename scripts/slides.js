@@ -46,6 +46,7 @@ const slides = [
                 if (cactusLeft < 80 && cactusLeft > 0 && dinoTop >= 100) {
                     //collision
                     cactus.style.display = "none"
+                    document.querySelector(".speech").style.display = "unset"
                 }
             }, 10);
 
