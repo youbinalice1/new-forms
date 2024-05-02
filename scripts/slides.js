@@ -46,7 +46,10 @@ const slides = [
                 if (cactusLeft < 80 && cactusLeft > 0 && dinoTop >= 100) {
                     //collision
                     cactus.style.display = "none"
-                    document.querySelector(".speech").style.display = "unset"
+                    const speech = [...document.querySelectorAll(".speech")]
+                    speech.map(i => {
+                        i.style.display = "unset"
+                    })
                 }
             }, 10);
 
