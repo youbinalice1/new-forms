@@ -45,7 +45,7 @@ const slides = [
                 // detect collision
                 if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
                     //collision
-                    alert("You got to the UK");
+                    cactus.style.display = "none"
                 }
             }, 10);
 
