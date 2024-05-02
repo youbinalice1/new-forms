@@ -43,7 +43,7 @@ const slides = [
                 );
 
                 // detect collision
-                if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 100) {
+                if (cactusLeft < 80 && cactusLeft > 0 && dinoTop >= 100) {
                     //collision
                     cactus.style.display = "none"
                 }
