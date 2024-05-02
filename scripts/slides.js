@@ -29,7 +29,7 @@ const slides = [
 
                     setTimeout(function () {
                         dino.classList.remove("jump");
-                    }, 300);
+                    }, 800);
                 }
             }
 
@@ -43,7 +43,7 @@ const slides = [
                 );
 
                 // detect collision
-                if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+                if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 100) {
                     //collision
                     cactus.style.display = "none"
                 }
