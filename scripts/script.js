@@ -1,3 +1,9 @@
+const animatecss = (el, animation) => {
+  console.log(el, animation)
+  el.classList.add("animate__animated")
+  el.classList.add("animate__" + animation)
+}
+
 const slideshow = {
   _page: 0,
   get page() {
@@ -32,8 +38,7 @@ const slideshow = {
     main.innerHTML = html
     main.classList.add("hidden");
     [...main.children].map((i, j) => {
-      i.classList.add("animate__animated")
-      i.classList.add("animate__fadeInUp")
+      animatecss(i, "fadeInUp")
       i.style.animationDelay = ((j * 200) + 80) + "ms"
     })
     oldMain.replaceWith(main)
@@ -66,7 +71,7 @@ onkeydown = e => {
   switch (e.code) {
     case "ArrowRight":
     case "ArrowDown":
-    // case "Space":
+      // case "Space":
       slideshow.next()
       break
     case "ArrowLeft":
