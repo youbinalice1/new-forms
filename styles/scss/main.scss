@@ -394,3 +394,23 @@ main {
         }
     }
 }
+
+#cigaretteData {
+    #cigarette {
+        display: flex;
+
+        img {
+            height: 3vw;
+            margin: 0;
+            padding: 0;
+
+
+
+        }
+
+        #tobacco {
+            object-fit: cover;
+            transition: 1s;
+        }
+    }
+}

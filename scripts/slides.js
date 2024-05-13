@@ -93,6 +93,14 @@ const slides = [
     {
         name: "cigaretteData",
         id: "cigaretteData",
+        onshow: () => {
+            const tobacco = document.getElementById("tobacco"),
+                width = tobacco.offsetWidth
+            const changeSize = percent => {
+                console.log(percent, width)
+                tobacco.style.width = width * (percent / 100) + "px"
+            }
+        }
     },
 
 ]

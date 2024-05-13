@@ -57,6 +57,8 @@ const slideshow = {
       const main = document.querySelector("main").classList
       main.remove("hidden")
       main.add("show")
+      if (slide.onshow)
+        slide.onshow()
     }, 50)
   },
   next() {
@@ -81,13 +83,13 @@ onkeydown = e => {
   }
 }
 
-onwheel = e => {
+/*onwheel = e => {
   if (slideshow.scrollLock == false) {
     slideshow.scrollLock = true
     setTimeout(() => { slideshow.scrollLock = false }, 600)
     e.deltaY < 0 ? slideshow.prev() : slideshow.next()
   }
-}
+}*/
 
 onload = async () => {
   document.documentElement.style.setProperty('--animate-duration', '.8s')
