@@ -93,6 +93,8 @@ const slides = [
     {
         name: "cigaretteData",
         id: "cigaretteData",
+        onload: () => {
+        },
         onshow: () => {
             const tobacco = document.getElementById("tobacco"),
                 width = tobacco.offsetWidth
