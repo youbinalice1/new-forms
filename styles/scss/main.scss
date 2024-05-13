@@ -413,4 +413,10 @@ main {
             transition: 1s;
         }
     }
+
+    select {
+        font-family: inherit !important;
+        font-size: 2em;
+        display: block;
+    }
 }

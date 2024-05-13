@@ -1,5 +1,4 @@
 const animatecss = (el, animation) => {
-  console.log(el, animation)
   el.classList.add("animate__animated")
   el.classList.add("animate__" + animation)
 }

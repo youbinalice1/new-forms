@@ -93,7 +93,16 @@ const slides = [
     {
         name: "cigaretteData",
         id: "cigaretteData",
-        onload: () => {
+        onload: async () => {
+            const data = await (await fetch("data/cities.json")).json()
+            const select = document.querySelector("select")
+            Object.entries(data).forEach(i => {
+                const option = document.createElement("option")
+                option.value = i[1]
+                option.innerText = i[0]
+                select.appendChild(option)
+            })
+            //87 - 189
         },
         onshow: () => {
             const tobacco = document.getElementById("tobacco"),
@@ -101,6 +110,12 @@ const slides = [
             const changeSize = percent => {
                 console.log(percent, width)
                 tobacco.style.width = width * (percent / 100) + "px"
+            }
+            const select = document.querySelector("select")
+            select.oninput = () => {
+                document.querySelector("h2").innerText = select.options[select.selectedIndex].innerText
+                document.querySelector("h3 span").innerText = select.value
+                changeSize(55 + ((45 / 102) * (select.value - 87)))
             }
         }
     },
