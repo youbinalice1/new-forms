@@ -42,7 +42,10 @@ const game = () => {
 const slides = [
     {
         name: "Pattern",
-        id: "p5"
+        id: "p5",
+        onshow: () => {
+            document.querySelector("iframe").focus()
+        }
     },
     {
         name: "Title page",
