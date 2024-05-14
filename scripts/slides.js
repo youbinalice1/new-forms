@@ -111,14 +111,18 @@ const slides = [
                 console.log(percent, width)
                 tobacco.style.width = width * (percent / 100) + "px"
             }
-            const select = document.querySelector("select")
-            select.oninput = () => {
-                document.querySelector("h2").innerText = select.options[select.selectedIndex].innerText
-                document.querySelector("h3 span").innerText = select.value
-                changeSize(55 + ((45 / 102) * (select.value - 87)))
-            }
+            const select = document.querySelector("select"),
+                fn = () => {
+                    document.querySelector("h2").innerText = select.options[select.selectedIndex].innerText
+                    document.querySelector("h3 span").innerText = select.value
+                    let minWidth = 40
+                    changeSize(minWidth + ((45 / (189 - minWidth)) * (select.value - 87)))
+                }
+            select.oninput = fn
+            select.value = ""
+            fn()
         }
-    },
+    }
 
 ]
 

@@ -76,7 +76,6 @@ footer {
 }
 
 h1 {
-    font-family: "Handjet", sans-serif;
     font-style: black;
     text-align: center;
     font-weight: 400;
@@ -87,13 +86,18 @@ h1 {
 }
 
 h2 {
-    font-family: "Handjet", sans-serif;
     font-style: black;
     text-align: center;
     line-height: 0.8;
     font-size: calc(4.2vw + 18px);
     font-variation-settings: 'wght' 800;
     color: $theme;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Handjet", sans-serif;
 }
 
 p {
@@ -149,14 +153,14 @@ a {
     #right {
         width: $arrowWidth / 2;
         cursor: pointer;
-        height: 100%;
+        height: 80%;
+        padding: 10% 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
 
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            font-size: 2em;
+        img {
+            width: 45px;
         }
     }
 
@@ -396,27 +400,62 @@ main {
 }
 
 #cigaretteData {
-    #cigarette {
+    .row {
         display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
 
-        img {
-            height: 3vw;
-            margin: 0;
-            padding: 0;
+        #rightbox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
 
+            h3 {
+                text-align: right;
 
+                span {
+                    font-size: calc(3vw + 50px);
+                    line-height: 0;
+                }
 
+                line-height: 0;
+                font-size: calc(1vw + 20px);
+            }
+
+            #cigarette {
+                display: flex;
+                margin-bottom: 200px;
+                width: fit-content;
+
+                img {
+                    height: 5vw;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #tobacco {
+                    object-fit: cover;
+                    transition: 1s;
+                }
+            }
         }
 
-        #tobacco {
-            object-fit: cover;
-            transition: 1s;
-        }
-    }
+        #leftbox {
+            h2 {
+                text-align: left;
+                font-size: calc(3vw + 50px);
+                margin-bottom: 20px;
+            }
 
-    select {
-        font-family: inherit !important;
-        font-size: 2em;
-        display: block;
+            select {
+                font-family: inherit !important;
+                font-size: 2em;
+                display: block;
+                width: 300px;
+                padding: 3px;
+                background: white;
+                border: solid black 4px;
+            }
+        }
     }
 }
