@@ -1,5 +1,9 @@
 const slides = [
     {
+        name: "Pattern",
+        id: "p5"
+    },
+    {
         name: "Title page",
         id: "title",
         onload: () => {
