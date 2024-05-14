@@ -281,7 +281,8 @@ main {
     }
 }
 
-#particles {
+#particles,
+#londonData {
     $dino-size: 80px;
 
     h2 {
@@ -381,8 +382,6 @@ main {
         position: relative;
         top: 43px;
         left: 580px;
-
-        background-image: url("/img/ja2.png");
         background-size: 60px 80px;
 
         animation: block 6s infinite linear;
@@ -461,5 +460,19 @@ main {
 
     #sky {
         margin-bottom: 200px;
+    }
+}
+
+#particles {
+    #cactus {
+        background-image: url("/img/ja2.png");
+    }
+}
+
+#londonData {
+    #cactus {
+        background-image: url("/img/ja3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 }
