@@ -138,6 +138,8 @@ let r = size / 2;
 
 let k = 5.3;
 
+let ugm = 0
+
 let newK = 1, timeline = 0
 
 console.log(airData)
@@ -161,7 +163,8 @@ function setup() {
 }
 
 function draw() {
-  background(mouseX)
+  const value = 255 - parseInt((parseInt(airData[ugm][1]) - 15) * (255 / 45))
+  background(value, value, value)
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
       circles[i][j].display();
@@ -171,6 +174,7 @@ function draw() {
 }
 
 function update(index) {
+  ugm = index
   newK = (airData[index][1] / 2) - 7
   document.getElementById("year").innerText = airData[index][0]
   document.getElementById("pollution").innerText = `${Math.floor(airData[index][1])}ugm`

@@ -42,7 +42,6 @@ const slideshow = {
     })
     oldMain.replaceWith(main)
     Splitting()
-    document.querySelector("header").innerHTML = `<p>${slide.name}</p><p>${slideshow.page + 1}/${slides.length}</p>`
     document.querySelector("footer p").innerHTML = slide.footer || ""
     if (slide.onload)
       await slide.onload()
