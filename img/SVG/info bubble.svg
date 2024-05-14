@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 574.8171 338.0073">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Handjet-SemiBold, Handjet;
+        font-size: 36px;
+        font-weight: 600;
+        opacity: .99;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <g>
+      <polygon class="cls-2" points="574.8171 297.0186 0 295.3065 0 17.25 574.8171 18.9622 574.8171 297.0186"/>
+      <polygon class="cls-2" points="567.5567 305.6436 8.0671 303.9314 8.0671 25.8749 567.5567 27.5871 567.5567 305.6436"/>
+      <polygon class="cls-2" points="567.5567 289.1778 8.0671 287.4656 8.0671 9.4091 567.5567 11.1213 567.5567 289.1778"/>
+      <polygon class="cls-2" points="559.4896 279.7687 16.1341 278.0565 16.1341 0 559.4896 1.7122 559.4896 279.7687"/>
+      <polygon class="cls-2" points="559.4896 312.7004 16.1341 310.9882 16.1341 32.9318 559.4896 34.6439 559.4896 312.7004"/>
+      <rect class="cls-2" x="496.2805" y="310.6122" width="19.6902" height="10.2732" transform="translate(1012.2512 631.4976) rotate(180)"/>
+      <rect class="cls-2" x="509.978" y="320.8854" width="17.122" height="9.4171" transform="translate(1037.078 651.1878) rotate(180)"/>
+      <rect class="cls-2" x="526.2439" y="330.3024" width="7.7049" height="7.7049" transform="translate(1060.1927 668.3098) rotate(180)"/>
+      <text class="cls-1" transform="translate(63.0739 63.6475)"><tspan x="0" y="0">This visualizes the level of air pollution </tspan><tspan x="-25.9404" y="41">through patterns. If the air quality is poor, </tspan><tspan x="-28.0566" y="82">the background turns darker, and if the air </tspan><tspan x="-19.0576" y="123.0005">quality is good, the background gradually </tspan><tspan x="-1.0571" y="164.0005">becomes brighter. You can also take a </tspan><tspan x=".0005" y="205.0005">screenshot by pressing the &apos;S&apos; button!</tspan></text>
+    </g>
+  </g>
+</svg>
