@@ -43,6 +43,24 @@ const slides = [
     {
         name: "Pattern",
         id: "p5",
+        onload: () => {
+            let info = document.getElementById("info"),
+                bubble = document.getElementById("infoBubble"),
+                src = info.getAttribute("src"),
+                i = "info.svg",
+                x = "Xbutton.svg"
+            info.onclick = () => {
+                if (src.endsWith(i)) {
+                    src = src.replace(i, x)
+                    bubble.style.display = "unset"
+                }
+                else {
+                    src = src.replace(x, i)
+                    bubble.style.display = "none"
+                }
+                info.setAttribute("src", src)
+            }
+        },
         onshow: () => {
             document.querySelector("iframe").focus()
         }

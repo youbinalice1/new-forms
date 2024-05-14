@@ -476,3 +476,33 @@ main {
         background-repeat: no-repeat;
     }
 }
+
+#p5 {
+    img#info {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        stroke-width: 1px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            filter: invert(1);
+        }
+    }
+
+    img#infoBubble {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 50vw;
+        top: 120px;
+        left: 100px;
+    }
+
+    div {
+        z-index: 2;
+        position: relative;
+    }
+}
