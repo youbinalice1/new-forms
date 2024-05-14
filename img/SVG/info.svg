@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.734 65.665">
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.734 64.734">
   <defs>
     <style>
-      .cls-1 {
-        font-family: LoRes21OT-SerifRegular, 'LoRes 21 OT';
-        font-size: 61px;
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
       }
 
       .cls-2 {
         fill: #fff;
-        stroke-width: 0px;
       }
     </style>
   </defs>
   <g id="_레이어_1-2" data-name="레이어 1">
     <g>
-      <rect class="cls-2" x="8.5052" y="8.9777" width="48.1961" height="48.1961"/>
-      <rect class="cls-2" x="15.5929" y="4.2526" width="33.5483" height="8.5052"/>
-      <rect class="cls-2" x="19.8455" width="24.5706" height="8.5052"/>
-      <rect class="cls-2" x="19.8455" y="56.2288" width="24.5706" height="8.5052"/>
-      <rect class="cls-2" x="48.1961" y="28.3507" width="24.5706" height="8.5052" transform="translate(93.0847 -27.8781) rotate(90)"/>
-      <rect class="cls-2" x="-8.0327" y="28.3507" width="24.5706" height="8.5052" transform="translate(36.8559 28.3507) rotate(90)"/>
-      <rect class="cls-2" x="15.5929" y="52.9212" width="33.5483" height="8.5052"/>
-      <rect class="cls-2" x="-9.214" y="29.0594" width="33.5483" height="8.5052" transform="translate(40.8722 25.7518) rotate(90)"/>
-      <rect class="cls-2" x="40.8722" y="29.0594" width="33.5483" height="8.5052" transform="translate(90.9584 -24.3343) rotate(90)"/>
+      <g>
+        <rect class="cls-2" x="8.5052" y="8.9777" width="48.1961" height="48.1961"/>
+        <rect class="cls-2" x="15.5929" y="4.2526" width="33.5483" height="8.5052"/>
+        <rect class="cls-2" x="19.8455" width="24.5706" height="8.5052"/>
+        <rect class="cls-2" x="19.8455" y="56.2288" width="24.5706" height="8.5052"/>
+        <rect class="cls-2" x="48.1961" y="28.3507" width="24.5706" height="8.5052" transform="translate(93.0847 -27.8781) rotate(90)"/>
+        <rect class="cls-2" x="-8.0327" y="28.3507" width="24.5706" height="8.5052" transform="translate(36.8559 28.3507) rotate(90)"/>
+        <rect class="cls-2" x="15.5929" y="52.9212" width="33.5483" height="8.5052"/>
+        <rect class="cls-2" x="-9.214" y="29.0594" width="33.5483" height="8.5052" transform="translate(40.8722 25.7518) rotate(90)"/>
+        <rect class="cls-2" x="40.8722" y="29.0594" width="33.5483" height="8.5052" transform="translate(90.9584 -24.3343) rotate(90)"/>
+      </g>
+      <path class="cls-1" d="m26.59,54.0752v-3.0498h2.8672v-20.1904h-2.8672v-3.0508h2.8672v-2.8662h5.917v26.1074h2.9287v3.0498h-11.7129Zm2.8672-34.8301v-5.9785h5.917v5.9785h-5.917Z"/>
     </g>
-    <text class="cls-1" transform="translate(23.7231 54.0144)"><tspan x="0" y="0">i</tspan></text>
   </g>
 </svg>
