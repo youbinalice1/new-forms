@@ -50,6 +50,15 @@ const slides = [
 
     },
     {
+        name: "DustIntro",
+        id: "fiveGuys",
+        onload: () => {
+           
+
+        }
+
+    },
+    {
         name: "Pattern",
         id: "p5",
         onload: () => {
@@ -73,15 +82,6 @@ const slides = [
         onshow: () => {
             document.querySelector("iframe").focus()
         }
-    },
-    {
-        name: "DustIntro",
-        id: "fiveGuys",
-        onload: () => {
-           
-
-        }
-
     },
     {
         id: "londonData",
