@@ -478,6 +478,9 @@ main {
         background-image: url("/img/ja3.png");
         background-size: contain;
         background-repeat: no-repeat;
+        height: 153px;
+        position: fixed;
+        bottom: 0px;
     }
 }
 
@@ -510,15 +513,18 @@ main {
         position: relative;
     }
 }
+
 .flexbox-container {
-    display:flex;
+    display: flex;
     align-items: center;
 
 }
+
 .flexbox-item {
     img {
         width: 160%;
     }
+
     margin: 60px;
 }
 
@@ -526,21 +532,24 @@ main {
     img {
         width: 40%;
     }
+
     margin-top: 20px;
     margin-bottom: 3px;
 }
 
 .titleBubble {
     display: flex;
+
     img {
         width: 300px;
-        
+
     }
+
     justify-content: space-between;
     width: inherit;
-    
+
     h1 {
         text-align: left;
         font-size: 120pt !important;
     }
-} 
+}
