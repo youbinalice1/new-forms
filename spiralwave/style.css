@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Handjet';
 }
 
 canvas {
@@ -10,8 +11,7 @@ canvas {
 
 #year {
   position: absolute;
-  font-family: "Jersey 20", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 25pt;
   font-style: normal;
   color: #000000;
@@ -29,8 +29,7 @@ canvas {
 
 #pollution {
   position: absolute;
-  font-family: "Jersey 20", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30pt;
   font-style: normal;
   color: #000000;

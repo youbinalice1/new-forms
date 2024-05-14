@@ -19,23 +19,23 @@ const slideshow = {
     const spin = document.querySelector("#loading").classList
     spin.remove("hidden")
     spin.add("show")
-    const rArrow = document.querySelector("#right img")
-    if (index == 0) {
-      document.getElementById("left").classList.add("hidden")
+    const rArrow = document.querySelector("#right img"),
+      slide = slides[index]
+    if (index == 0)
       rArrow.setAttribute("src", rArrow.getAttribute("src").replace("Next", "SVG/Go"))
-    }
-    else {
-      document.getElementById("left").classList.remove("hidden")
+    else
       rArrow.setAttribute("src", rArrow.getAttribute("src").replace("SVG/Go", "Next"))
-    }
-    if (index + 1 == slides.length)
+    if (index == 0)
+      document.getElementById("left").classList.add("hidden")
+    else
+      document.getElementById("left").classList.remove("hidden")
+    if (index + 1 == slides.length || slide.disableArrows)
       document.getElementById("right").classList.add("hidden")
     else
       document.getElementById("right").classList.remove("hidden")
     const oldMain = document.querySelector("main")
     oldMain.classList.add("hidden")
-    const slide = slides[index],
-      html = await (await fetch(`slides/${slide.id}.html`)).text(),
+    const html = await (await fetch(`slides/${slide.id}.html`)).text(),
       main = document.createElement("main")
     document.title = slide.name
     main.id = slide.id
@@ -76,8 +76,9 @@ onkeydown = e => {
   switch (e.code) {
     case "ArrowRight":
     case "ArrowDown":
-      // case "Space":
-      slideshow.next()
+    case "Space":
+      if (!slides[slideshow.page].disableArrows)
+        slideshow.next()
       break
     case "ArrowLeft":
     case "ArrowUp":
