@@ -86,7 +86,7 @@ const slides = [
                     document.getElementById("borough").innerText = "Hover over a borough to view data"
                 }
                 const gradient = chroma.scale(['#c9c9c9', '#666666', '#2d2d2d']).domain([40, 55])
-                i.style.fill = gradient(data[i.id])
+                i.style.fill = data[i.id] ? gradient(data[i.id]) : "white"
             })
         }
     },
