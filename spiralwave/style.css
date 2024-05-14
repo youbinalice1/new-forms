@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#year {
+  position: absolute;
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-size: 25pt;
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  display: block;
+  top: 0px;
+  left: 20px;
+}
+
+.field {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+#pollution {
+  position: absolute;
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-size: 30pt;
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  display: block;
+  bottom: 1px;
+  right: 20px;
+}
+
+.range.field input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #4aff65;
+  border-radius: 50%;
+  border: 1px solid #4aff65;
+  cursor: pointer;
+}
