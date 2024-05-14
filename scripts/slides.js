@@ -41,6 +41,15 @@ const game = () => {
 
 const slides = [
     {
+        name: "Title page",
+        id: "title",
+        onload: () => {
+            const button = document.querySelector(".material-symbols-outlined")
+
+        }
+
+    },
+    {
         name: "Pattern",
         id: "p5",
         onload: () => {
@@ -64,15 +73,6 @@ const slides = [
         onshow: () => {
             document.querySelector("iframe").focus()
         }
-    },
-    {
-        name: "Title page",
-        id: "title",
-        onload: () => {
-            const button = document.querySelector(".material-symbols-outlined")
-
-        }
-
     },
     {
         name: "DustIntro",
