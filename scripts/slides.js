@@ -76,7 +76,8 @@ const slides = [
     },
     {
         id: "londonData",
-        onload: game
+        onload: game,
+        disableArrows: true
     },
     {
         name: "DAQI",
@@ -89,7 +90,8 @@ const slides = [
     {
         name: "Particles",
         id: "particles",
-        onload: game
+        onload: game,
+        disableArrows: true
 
     },
 
