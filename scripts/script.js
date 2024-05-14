@@ -19,10 +19,15 @@ const slideshow = {
     const spin = document.querySelector("#loading").classList
     spin.remove("hidden")
     spin.add("show")
-    if (index == 0)
+    const rArrow = document.querySelector("#right img")
+    if (index == 0) {
       document.getElementById("left").classList.add("hidden")
-    else
+      rArrow.setAttribute("src", rArrow.getAttribute("src").replace("Next", "SVG/Go"))
+    }
+    else {
       document.getElementById("left").classList.remove("hidden")
+      rArrow.setAttribute("src", rArrow.getAttribute("src").replace("SVG/Go", "Next"))
+    }
     if (index + 1 == slides.length)
       document.getElementById("right").classList.add("hidden")
     else
