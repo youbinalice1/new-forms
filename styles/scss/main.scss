@@ -478,11 +478,11 @@ main {
 }
 
 #p5 {
-    img#info {
+    #info {
         position: fixed;
         top: 30px;
         right: 30px;
-        width: 30px;
+        width: 50px;
         stroke-width: 1px;
         transition: .3s;
         cursor: pointer;
@@ -492,7 +492,7 @@ main {
         }
     }
 
-    img#infoBubble {
+    #infoBubble {
         display: none;
         position: fixed;
         z-index: 1;
