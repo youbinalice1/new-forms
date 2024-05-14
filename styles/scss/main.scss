@@ -510,3 +510,14 @@ main {
         position: relative;
     }
 }
+.flexbox-container {
+    display:flex;
+    align-items: center;
+
+}
+.flexbox-item {
+    img {
+        width: 160%;
+    }
+    margin: 60px;
+}
