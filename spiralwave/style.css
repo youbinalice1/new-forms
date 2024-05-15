@@ -35,8 +35,8 @@ canvas {
   color: #000000;
   background-color: #ffffff;
   display: block;
-  bottom: 1px;
-  right: 20px;
+  top: 50px;
+  left:20px;
 }
 
 .range.field input::-webkit-slider-thumb {
