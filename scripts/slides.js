@@ -59,6 +59,13 @@ const slides = [
 
     },
     {
+        name: "Particles",
+        id: "particles",
+        onload: game,
+        disableArrows: true
+
+    },
+    {
         name: "Pattern",
         id: "p5",
         onload: () => {
@@ -89,26 +96,6 @@ const slides = [
         disableArrows: true
     },
     {
-        name: "DAQI",
-        id: "DAQI",
-    },
-    {
-        name: "Introduction",
-        id: "introN02",
-    },
-    {
-        name: "Particles",
-        id: "particles",
-        onload: game,
-        disableArrows: true
-
-    },
-
-    {
-        name: "londonIntro",
-        id: "londonIntro",
-    },
-    {
         name: "Air pollution in Greater London by Borough",
         id: "boroughs",
         footer: "Data from <a href='https://example.com'>London Assembly</a>.",
@@ -131,6 +118,7 @@ const slides = [
     {
         name: "Cigarette intro",
         id: "CigaretteIntro"
+
     },
     {
         name: "cigaretteData",
