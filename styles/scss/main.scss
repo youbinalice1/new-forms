@@ -307,7 +307,7 @@ main {
     #dino {
         width: $dino-size;
         height: $dino-size;
-        background-image: url("/img/ja1.png");
+        background-image: url("img/ja1.png");
         background-size: $dino-size $dino-size;
         position: relative;
         top: 200px - $dino-size;
@@ -328,7 +328,7 @@ main {
     }
 
     #uk {
-        background-image: url("/img/ja9.png");
+        background-image: url("img/ja9.png");
     }
 
     #next {
@@ -341,12 +341,12 @@ main {
         background-size: contain;
         background-repeat: no-repeat;
         display: none;
-        background-image: url("/img/ja11.png");
+        background-image: url("img/ja11.png");
         cursor: pointer;
     }
 
     #london {
-        background-image: url("/img/ja10.png");
+        background-image: url("img/ja10.png");
     }
 
     .jump {
@@ -469,13 +469,13 @@ main {
 
 #particles {
     #cactus {
-        background-image: url("/img/ja2.png");
+        background-image: url("img/ja2.png");
     }
 }
 
 #londonData {
     #cactus {
-        background-image: url("/img/ja3.png");
+        background-image: url("img/ja3.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 153px;
